@@ -1,0 +1,16 @@
+data/
+
+test.ipynb
+test_results/
+test_egpt.ipynb
+test_obs_OBD.ipynb
+
+prune_outputs/
+models/
+*.pth
+
+egpt.ipynb
+
+.vscode/
+
+checkpoints_cnn_neff/
