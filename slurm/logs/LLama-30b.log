@@ -1,0 +1,91 @@
+Starting run at: Thu Sep 18 11:39:37 AM EDT 2025
+  warnings.warn(
+[INFO] Hugging Face login successful via HF_TOKEN.
+[INFO] Visible GPUs: 0,1,2,3
+[INFO] Loading huggyllama/llama-30b
+
+
+[RESULT] Dense PPL: 4.101 | MLP sparsity: 0.00%
+
+[ZERO-SHOT] Dense
+----------------------------------------------------------------------
+BoolQ          66.91%
+RTE            53.79%
+HellaSwag      60.75%
+WinoGrande     49.64%
+ARC-e          75.08%
+ARC-c          46.93%
+OBQA           30.80%
+----------------------------------------------------------------------
+Mean accuracy over 7 tasks: 54.84%
+
+
+[RESULT] Wanda PPL: 4.890 | MLP sparsity: 50.00%
+
+[ZERO-SHOT] Wanda (MLP)
+----------------------------------------------------------------------
+BoolQ          68.99%
+RTE            54.51%
+HellaSwag      58.89%
+WinoGrande     49.96%
+ARC-e          72.85%
+ARC-c          44.28%
+OBQA           29.60%
+----------------------------------------------------------------------
+Mean accuracy over 7 tasks: 54.16%
+
+
+[RESULT] Magnitude (|W|) PPL: 5.553 | MLP sparsity: 50.00%
+
+[ZERO-SHOT] Magnitude (|W|)
+----------------------------------------------------------------------
+BoolQ          70.46%
+RTE            52.35%
+HellaSwag      56.40%
+WinoGrande     50.20%
+ARC-e          71.93%
+ARC-c          43.43%
+OBQA           30.20%
+----------------------------------------------------------------------
+Mean accuracy over 7 tasks: 53.57%
+
+
+[RESULT] Neff-Wanda (|W|*||X|| PPL: 4.687 | MLP sparsity: 40.18%
+
+[ZERO-SHOT] Neff-Wanda (|W|*||X||)
+----------------------------------------------------------------------
+BoolQ          67.25%
+RTE            52.35%
+HellaSwag      59.31%
+WinoGrande     50.36%
+ARC-e          71.00%
+ARC-c          42.66%
+OBQA           27.40%
+----------------------------------------------------------------------
+Mean accuracy over 7 tasks: 52.90%
+
+
+[RESULT] Neff-Magnitude (|W|) PPL: 4.511 | MLP sparsity: 36.60%
+
+[ZERO-SHOT] Neff-Magnitude (|W|)
+----------------------------------------------------------------------
+BoolQ          67.68%
+RTE            53.43%
+HellaSwag      59.85%
+WinoGrande     50.28%
+ARC-e          74.58%
+ARC-c          45.90%
+OBQA           32.00%
+----------------------------------------------------------------------
+Mean accuracy over 7 tasks: 54.82%
+
+[SUMMARY]
+  Dense PPL                 : 4.101 | Sparsity: 0.00%
+  Wanda                     : 4.890 | Sparsity: 50.00%
+  Magnitude                 : 5.553 | Sparsity: 50.00%
+  Neff-Wanda                : 4.687006777645397 | Sparsity: 40.18%
+  Neff-Magnitude            : 4.511386494808749 | Sparsity: 36.60%
+:00, 25.65it/s]
+LL scores: 100%|█████████▉| 249/250 [00:10<00:00, 25.39it/s]
+                                                            
+Finished at: Thu Sep 18 12:43:43 PM EDT 2025
