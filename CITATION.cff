@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying ICML 2026 paper."
+title: "Effective Model Pruning: Measuring the Redundancy of Model Components"
+abstract: >
+  Effective Model Pruning (EMP) supplies a universal adaptive threshold for neural
+  network pruning, derived from the effective sample size of the importance score
+  distribution (the inverse Simpson index). A tight lower bound on the preserved
+  mass and an upper bound on the loss change under magnitude pruning are proven,
+  and the method is validated on FC, CNN, ResNet, Kolmogorov Arnold, GPT 2, and
+  LLaMA family models, as well as on image features.
+authors:
+  - family-names: Wang
+    given-names: Yixuan
+  - family-names: Guralnik
+    given-names: Dan P.
+  - family-names: Akbari
+    given-names: Saiedeh
+  - family-names: Dixon
+    given-names: Warren
+repository-code: "https://github.com/noMushroomw/Effective-model-pruning"
+license: MIT
+keywords:
+  - model pruning
+  - effective sample size
+  - inverse Simpson index
+  - sparsity
+  - large language models
+  - attention heads
+preferred-citation:
+  type: conference-paper
+  title: "Effective Model Pruning: Measuring the Redundancy of Model Components"
+  authors:
+    - family-names: Wang
+      given-names: Yixuan
+    - family-names: Guralnik
+      given-names: Dan P.
+    - family-names: Akbari
+      given-names: Saiedeh
+    - family-names: Dixon
+      given-names: Warren
+  collection-title: "Proceedings of the 43rd International Conference on Machine Learning"
+  year: 2026
+  notes: "Spotlight"
