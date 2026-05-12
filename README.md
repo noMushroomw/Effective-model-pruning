@@ -8,19 +8,19 @@ Official code for the ICML 2026 spotlight paper *Effective Model Pruning: Measur
 
 Effective Model Pruning (EMP) is a universal threshold selection rule. Given any score vector $s \in \mathbb{R}^N$ produced by any pruning criterion, EMP computes the normalized probability vector $\omega \in \Delta^{N - 1}$ on the standard simplex via
 
-$$\omega_i \;=\; \frac{|s_i|}{\sum_{j=1}^{N} |s_j|}, \qquad i = 1, \ldots, N,$$
+$$\omega_i = \frac{|s_i|}{\sum_{j=1}^{N} |s_j|}, \qquad i = 1, \ldots, N,$$
 
 and returns the effective sample size
 
-$$N_\text{eff}(\omega) \;=\; \left( \sum_{i=1}^{N} \omega_i^2 \right)^{-1},$$
+$$N_\text{eff}(\omega)= \left( \sum_{i=1}^{N} \omega_i^2 \right)^{-1},$$
 
 namely the inverse Simpson index of $\omega$, also known in the sequential Monte Carlo literature as the effective number of particles. The $N - \nu$ lowest scoring components are pruned, where $\nu := \lfloor \beta\, N_\text{eff} \rfloor$ is the integer retention count and $\beta \in (0, +\infty)$ is the deployment knob whose default value is $\beta = 1$. Theorem 4.2 of the paper establishes a universal tight lower bound on the preserved mass fraction
 
-$$s_\text{eff} \;:=\; \sum_{i \in \pi} \omega_i \;\geq\; \frac{\nu}{N} + \frac{N - \nu}{N}\sqrt{\frac{N - \nu - 1}{(\nu + 1)(N - 1)}},$$
+$$s_\text{eff} = \sum_{i \in \pi} \omega_i \geq \frac{\nu}{N} + \frac{N - \nu}{N}\sqrt{\frac{N - \nu - 1}{(\nu + 1)(N - 1)}},$$
 
 where $\pi$ is the set of indices of the top $\nu$ entries of $\omega$, equivalently written
 
-$$1 - s_\text{eff} \;\leq\; \frac{N - \nu}{N}\left(1 - \sqrt{\frac{N - \nu - 1}{(\nu + 1)(N - 1)}}\right).$$
+$$1 - s_\text{eff} \leq \frac{N - \nu}{N}\left(1 - \sqrt{\frac{N - \nu - 1}{(\nu + 1)(N - 1)}}\right).$$
 
 Under the further restriction that the score vector coincides with the parameter vector (the magnitude pruning setting $s = \theta^\ast$), Equation 5 of the paper combines this mass bound with Lemma 3.1 of Zhang et al. (2023) to produce an asymptotic upper bound on the post pruning loss change in the regime $N \to \infty$ with $\rho := \nu / N$ fixed in $(0, 1)$. This loss bound is asymptotic in $N$, not pointwise, and it applies specifically to magnitude pruning; the mass bound on $s_\text{eff}$ above applies to every scoring criterion.
 
