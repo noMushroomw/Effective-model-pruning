@@ -2,7 +2,7 @@
 
 Official code for the ICML 2026 spotlight paper *Effective Model Pruning: Measuring the Redundancy of Model Components* by Yixuan Wang, Dan P. Guralnik, Saiedeh Akbari, and Warren E. Dixon.
 
-[Paper on OpenReview](https://openreview.net/forum?id=ICML2026_Submission12889) · [BibTeX](#citation) · [Reproducing the tables and figures](#reproducing-the-paper)
+[Paper on ArXiv](https://arxiv.org/abs/2509.25606) · [BibTeX](#citation) · [Reproducing the tables and figures](#reproducing-the-paper)
 
 ## What this repository delivers
 
