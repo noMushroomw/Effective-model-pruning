@@ -123,13 +123,11 @@ Throughout the code and the paper, $N$ denotes the total number of model compone
 If you use EMP or any part of this codebase, please cite
 
 ```bibtex
-@inproceedings{wang2026effective,
-  title     = {Effective Model Pruning: Measuring the Redundancy of Model Components},
+@article{wang2026effective,
+  title     = {Effective Model Pruning: Measuring The Redundancy of Model Components},
   author    = {Wang, Yixuan and Guralnik, Dan P. and Akbari, Saiedeh and Dixon, Warren E.},
-  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
-  series    = {ICML 2026},
-  year      = {2026},
-  note      = {Spotlight}
+  journal   = {arXiv preprint arXiv:2509.25606},
+  year      = {2025}
 }
 ```
 
